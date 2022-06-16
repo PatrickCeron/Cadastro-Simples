@@ -1,0 +1,28 @@
+package LOJA;
+public class Produtos
+{
+    String nome;
+    double preco;
+    int codigo;
+    
+    public Produtos(int codigo){
+        this.codigo = codigo;
+    }
+    
+    public void Produtos2(String nome, double preco){
+        this.nome = nome;
+        this.preco = preco;
+    }
+        
+        public String toString(){
+            return "Código de barras:" + this.codigo + "/nome:" + this.nome + "preco:" + this.preco;
+    }
+    
+    public int Getcodigobarra(){
+        return this.codigo;
+    }
+        
+    }
+    
+
+

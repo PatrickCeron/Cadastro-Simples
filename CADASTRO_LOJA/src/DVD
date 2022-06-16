@@ -1,0 +1,18 @@
+package LOJA;
+public class DVD extends Produtos
+{
+    String duracao;
+    
+    public DVD(int codigo){
+        super(codigo);
+    }
+    
+    public void Produtos2(String nome,double preco,String duracao){
+        super.Produtos2(nome,preco);
+        this.duracao = duracao;
+    }
+    
+    public String toString(){
+        return super.toString() + "/Duração:" + duracao;
+    }
+}

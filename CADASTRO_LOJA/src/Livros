@@ -1,0 +1,20 @@
+package LOJA;
+public class Livros extends Produtos
+{
+    String autor;
+    
+    public Livros(int codigo){
+        super(codigo);
+    }
+    
+    public void Produtos2(String nome, double preco, String autor){
+        super.Produtos2(nome,preco);
+        this.autor = autor;
+        }
+        
+    public String toString(){
+            return super.toString() + "Autor:" + autor;
+        }
+ }
+    
+

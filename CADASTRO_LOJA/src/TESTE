@@ -1,0 +1,59 @@
+package LOJA;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class TESTE
+{
+    public static void main(String[]args){
+        
+        System.out.println("\u000C");
+        
+        ArrayList<Produtos> LISTA = new ArrayList <Produtos>();
+        
+        Livros L = new Livros(123);
+        CD    C = new CD(1234);
+        DVD   D = new DVD(12345);
+        Livros L2= new Livros(123456);
+        DVD    D2 = new DVD(1234567);
+        
+        L.Produtos2("dracula/", 50.00, "Carlos");
+        C.Produtos2("Musicas/", 20.00, 15);
+        D.Produtos2("Show/", 80.00, "2:00:00");
+        L2.Produtos2("Joao e Maria/" ,50.00, "Joao");
+        D2.Produtos2("Videos/", 80.00, "3:00:00");
+        
+        LISTA.add(L);
+        LISTA.add(C);
+        LISTA.add(D);
+        LISTA.add(L2);
+        LISTA.add(D2);
+        
+        
+        
+        Scanner prompt = new Scanner(System.in);
+        System.out.println("Digite o código de barras");
+        int codigo = prompt.nextInt();
+        
+        if(codigo==123){
+             System.out.println(L);
+             return;
+        }
+        if(codigo==1234){
+            System.out.println(C);
+            return;
+        }
+        if(codigo==12345){
+            System.out.println(D);
+            return;
+        }
+        if(codigo==123456){
+            System.out.println(L2);
+            return;
+        }
+        if(codigo==1234567){
+            System.out.println(D2);
+            return;
+        }else{
+            System.out.println("Codigo não encontrado");
+        }
+}
+}
