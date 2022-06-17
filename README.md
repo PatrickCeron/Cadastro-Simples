@@ -1,5 +1,5 @@
-# Cadastro-Simples
+# simple-registration
 
--Projeto criado para a prática de orientação a objetos.
+- Project created for the practice of object orientation.
 
--Este projeto foi criado com a idéia de cadastrar diferentes produtos em um sistema de loja, sendo possível buscar os produtos existentes através de seus códigos.
+- This project was created with the idea of registering different products in a store system, being possible to search the existing products through their codes.
